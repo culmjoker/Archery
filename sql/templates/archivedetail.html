@@ -6,7 +6,7 @@
         <h4 style="display: inline;">工单名称：<span>{{ archive_config.title }}</span></h4>&nbsp;&nbsp;&nbsp;
         {% if perms.sql.archive_mgt %}
             <a type='button' id="btnEditArchiveConfig" class='btn btn-info'
-               href="/admin/sql/archiveconfig/{{ archive_config.id }}/change/">修改归档配置</a>
+               href="/archery/admin/sql/archiveconfig/{{ archive_config.id }}/change/">修改归档配置</a>
         {% endif %}
         <!--单次调用-->
         {% if archive_config.status == 1 and perms.sql.archive_mgt %}

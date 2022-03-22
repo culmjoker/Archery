@@ -9,10 +9,10 @@
         </h4>
         <!--只允许发起人提交其他实例-->
         {% if user.username == workflow_detail.engineer %}
-            <a type='button' id="btnSubmitOtherCluster" class='btn btn-warning' href="/submitotherinstance/">上线其他实例</a>
+            <a type='button' id="btnSubmitOtherCluster" class='btn btn-warning' href="/archery/submitotherinstance/">上线其他实例</a>
         {% endif %}
         {% if is_can_review or is_can_execute or is_can_rollback or user.is_superuser %}
-            <a type='button' id="btnViewSql" class='btn btn-default' onclick="loading(this)" href="/editsql/">查看提交信息</a>
+            <a type='button' id="btnViewSql" class='btn btn-default' onclick="loading(this)" href="/archery/editsql/">查看提交信息</a>
         {% endif %}
     </div>
     <input type="hidden" id="sqlMaxRowNumber" value="{{ rows|length }}">
@@ -252,7 +252,7 @@
             <!--只允许发起人修改工单-->
             {% csrf_token %}
             <a type='button' id="btnEditSql" onclick="loading(this)" class='btn btn-default'
-               href="/editsql/">重新修改</a>
+               href="/archery/editsql/">重新修改</a>
         {% endif %}
     {% endif %}
 
