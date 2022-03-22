@@ -12,7 +12,7 @@
         <div class="form-inline pull-right">
             <div class="form-group ">
                 <button id="btn_add_param" type="button" class="btn btn-default"
-                        onclick="window.open('/admin/sql/paramtemplate/add/')">
+                        onclick="window.open('/archery/admin/sql/paramtemplate/add/')">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                     添加参数
                 </button>
@@ -129,7 +129,7 @@
                         field: 'variable_name',
                         formatter: function (value, row, index) {
                             if (row.id) {
-                                return "<a target=\"_blank\" href=\"/admin/sql/paramtemplate/" + row.id + "/change/\">" + value + "</a>"
+                                return "<a target=\"_blank\" href=\"/archery/admin/sql/paramtemplate/" + row.id + "/change/\">" + value + "</a>"
                             } else {
                                 return value
                             }

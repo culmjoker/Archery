@@ -122,10 +122,10 @@
                     formatter: function (value, row, index) {
                         switch (row.object_type) {
                             case 0:
-                                return "<a href=\"/admin/sql/users/" + row.object_id + "/change/\">" + row.object_name + "</a>";
+                                return "<a href=\"/archery/admin/sql/users/" + row.object_id + "/change/\">" + row.object_name + "</a>";
                                 break;
                             case 1:
-                                return "<a href=\"/admin/sql/instance/" + row.object_id + "/change/\">" + row.object_name + "</a>";
+                                return "<a href=\"/archery/admin/sql/instance/" + row.object_id + "/change/\">" + row.object_name + "</a>";
                                 break;
                             default:
                                 return "未知"

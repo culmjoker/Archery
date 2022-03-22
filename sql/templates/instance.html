@@ -34,7 +34,7 @@
         </div>
         <div class="form-group ">
             <button id="btn_add_master" type="button" class="btn btn-default"
-                    onclick="window.open('/admin/sql/instance/add/')">
+                    onclick="window.open('/archery/admin/sql/instance/add/')">
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                 添加实例
             </button>
@@ -139,7 +139,7 @@
                         field: 'instance_name',
                         sortable: true,
                         formatter: function (value, row, index) {
-                            return "<a target=\"_blank\" href=\"/admin/sql/instance/" + row.id + "/change/\">" + value + "</a>"
+                            return "<a target=\"_blank\" href=\"/archery/admin/sql/instance/" + row.id + "/change/\">" + value + "</a>"
                         }
                     }, {
                         title: '实例类型',

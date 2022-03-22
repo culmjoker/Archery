@@ -185,10 +185,10 @@
                         var span = document.createElement('span');
                         span.setAttribute('title', value);
                         if (value.length > 20) {
-                            span.innerHTML = "<a href=\"/detail/" + row.id + "/\">" + value.substr(0, 20) + '...';
+                            span.innerHTML = "<a href=\"/archery/detail/" + row.id + "/\">" + value.substr(0, 20) + '...';
                             +"</a>";
                         } else {
-                            span.innerHTML = "<a href=\"/detail/" + row.id + "/\">" + value + "</a>";
+                            span.innerHTML = "<a href=\"/archery/detail/" + row.id + "/\">" + value + "</a>";
                         }
                         return span.outerHTML;
                     }

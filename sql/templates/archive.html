@@ -29,7 +29,7 @@
         {% if perms.sql.archive_mgt %}
             <div class="form-group">
                 <button id="btn_add_config" type="button" class="btn btn-info"
-                        onclick="window.open('/admin/sql/archiveconfig/add/')">
+                        onclick="window.open('/archery/admin/sql/archiveconfig/add/')">
                     <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
                     <span aria-hidden="true"></span>添加配置
                 </button>
@@ -305,10 +305,10 @@
                         var span = document.createElement('span');
                         span.setAttribute('title', value);
                         if (value.length > 10) {
-                            span.innerHTML = "<a href=\"/archive/" + row.id + "/\">" + value.substr(0, 10) + '...';
+                            span.innerHTML = "<a href=\"/archery/archive/" + row.id + "/\">" + value.substr(0, 10) + '...';
                             +"</a>";
                         } else {
-                            span.innerHTML = "<a href=\"/archive/" + row.id + "/\">" + value + "</a>";
+                            span.innerHTML = "<a href=\"/archery/archive/" + row.id + "/\">" + value + "</a>";
                         }
                         return span.outerHTML;
                     }

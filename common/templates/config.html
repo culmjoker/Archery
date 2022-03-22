@@ -1234,7 +1234,7 @@
                 success: function (data) {
                     if (data.status === 0) {
                         alert('已添加定时同步任务并且触发同步，点击确认查看任务状态');
-                        window.open('/admin/django_q/schedule/?q=sync_ding_user_id')
+                        window.open('/archery/admin/django_q/schedule/?q=sync_ding_user_id')
                     } else {
                         alert(data.msg);
                     }
