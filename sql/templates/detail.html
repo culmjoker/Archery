@@ -540,7 +540,7 @@
                 escape: true,
                 method: 'get',
                 contentType: "application/x-www-form-urlencoded",
-                url: "/sqlworkflow/detail_content/",
+                url: "/archery/sqlworkflow/detail_content/",
                 striped: true,                      //是否显示行间隔色
                 cache: true,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
                 pagination: true,                   //是否显示分页（*）
@@ -684,7 +684,7 @@
         function get_logs() {
             $.ajax({
                 type: "post",
-                url: "/workflow/log/",
+                url: "/archery/workflow/log/",
                 dataType: "json",
                 data: {
                     workflow_id: "{{ workflow_detail.id }}",
@@ -747,7 +747,7 @@
                 escape: true,
                 method: 'post',
                 contentType: "application/x-www-form-urlencoded",
-                url: "/inception/osc_control/",
+                url: "/archery/inception/osc_control/",
                 striped: true,                      //是否显示行间隔色
                 cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
                 pagination: false,                   //是否显示分页（*）
@@ -869,7 +869,7 @@
                     //发送请求
                     $.ajax({
                         type: "post",
-                        url: "/inception/osc_control/",
+                        url: "/archery/inception/osc_control/",
                         dataType: "json",
                         data: {
                             sqlsha1: sqlsha1,
@@ -926,7 +926,7 @@
                 $.ajax({
                     type: "post",
                     async: false,
-                    url: "/getWorkflowStatus/",
+                    url: "/archery/getWorkflowStatus/",
                     dataType: "json",
                     data: {
                         workflow_id: workflow_id

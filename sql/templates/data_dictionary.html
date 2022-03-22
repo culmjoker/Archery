@@ -288,7 +288,7 @@
             $(function () {
                 $.ajax({
                     type: "get",
-                    url: "/group/user_all_instances/",
+                    url: "/archery/group/user_all_instances/",
                     dataType: "json",
                     data: {
                         db_type: ['mysql', 'mssql', 'oracle']
@@ -335,7 +335,7 @@
             $('#db_name').empty();
             $.ajax({
                 type: "get",
-                url: "/instance/instance_resource/",
+                url: "/archery/instance/instance_resource/",
                 dataType: "json",
                 data: {
                     instance_name: $("#instance_name").val(),
@@ -384,7 +384,7 @@
             } else {
                 $.ajax({
                     type: "get",
-                    url: "/data_dictionary/table_list/",
+                    url: "/archery/data_dictionary/table_list/",
                     dataType: "json",
                     data: {
                         instance_name: instance_name,
@@ -447,7 +447,7 @@
 
             $.ajax({
                 type: "get",
-                url: "/data_dictionary/table_info/",
+                url: "/archery/data_dictionary/table_info/",
                 dataType: "json",
                 data: {
                     instance_name: ins_name,

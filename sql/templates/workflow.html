@@ -54,7 +54,7 @@
                 escape: true,
                 method: 'post',
                 contentType: "application/x-www-form-urlencoded",
-                url: "/workflow/list/",
+                url: "/archery/workflow/list/",
                 striped: true,                      //是否显示行间隔色
                 cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
                 pagination: true,                   //是否显示分页（*）
@@ -159,7 +159,7 @@
                 $('button[type=button]').prop('disabled', true);
                 $.ajax({
                     type: "post",
-                    url: "/workflowaudit/",
+                    url: "/archery/workflowaudit/",
                     dataType: "json",
                     data: {
                         audit_id: audit_id,

@@ -147,7 +147,7 @@
         $("#group_name").change(function () {
             $.ajax({
                 type: "post",
-                url: "/group/instances/",
+                url: "/archery/group/instances/",
                 dataType: "json",
                 data: {
                     group_name: $("#group_name").val(),
@@ -201,7 +201,7 @@
             });
             $.ajax({
                 type: "post",
-                url: "/group/auditors/",
+                url: "/archery/group/auditors/",
                 dataType: "json",
                 data: {
                     group_name: $("#group_name").val(),
@@ -247,7 +247,7 @@
                 escape: true,
                 method: 'post',
                 contentType: "application/x-www-form-urlencoded",
-                url: "/query/applylist/",
+                url: "/archery/query/applylist/",
                 striped: true,                      //是否显示行间隔色
                 cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
                 pagination: true,                   //是否显示分页（*）
@@ -389,7 +389,7 @@
         $("#instance_name").change(function () {
             $.ajax({
                 type: "get",
-                url: "/instance/instance_resource/",
+                url: "/archery/instance/instance_resource/",
                 dataType: "json",
                 data: {
                     instance_name: $("#instance_name").val(),
@@ -438,7 +438,7 @@
         $("#db_name").change(function () {
             $.ajax({
                 type: "get",
-                url: "/instance/instance_resource/",
+                url: "/archery/instance/instance_resource/",
                 dataType: "json",
                 data: {
                     instance_name: $("#instance_name").val(),
@@ -565,7 +565,7 @@
                 //提交请求
                 $.ajax({
                     type: "post",
-                    url: "/query/applyforprivileges/",
+                    url: "/archery/query/applyforprivileges/",
                     dataType: "json",
                     data: {
                         title: title,
@@ -605,7 +605,7 @@
             var workflow_type = 1;
             $.ajax({
                 type: "post",
-                url: "/workflow/log/",
+                url: "/archery/workflow/log/",
                 dataType: "json",
                 data: {
                     workflow_id: workflow_id,

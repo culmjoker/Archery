@@ -271,7 +271,7 @@
             //将数据通过ajax提交给获取db_name
             $.ajax({
                 type: "get",
-                url: "/instance/instance_resource/",
+                url: "/archery/instance/instance_resource/",
                 dataType: "json",
                 data: {
                     instance_name: $("#instance_name").val(),
@@ -313,7 +313,7 @@
             //将数据通过ajax提交给获取db_name
             $.ajax({
                 type: "get",
-                url: "/instance/instance_resource/",
+                url: "/archery/instance/instance_resource/",
                 dataType: "json",
                 data: {
                     instance_name: $("#instance_name").val(),
@@ -451,7 +451,7 @@
             //将数据通过ajax提交给后端进行检查
             $.ajax({
                 type: "post",
-                url: "/simplecheck/",
+                url: "/archery/simplecheck/",
                 dataType: "json",
                 data: {
                     sql_content: editor.getValue(),
@@ -596,7 +596,7 @@
         $("#group_name").change(function () {
             $.ajax({
                 type: "post",
-                url: "/group/instances/",
+                url: "/archery/group/instances/",
                 dataType: "json",
                 data: {
                     group_name: $("#group_name").val(),
@@ -658,7 +658,7 @@
             });
             $.ajax({
                 type: "post",
-                url: "/group/auditors/",
+                url: "/archery/group/auditors/",
                 dataType: "json",
                 data: {
                     group_name: $("#group_name").val(),

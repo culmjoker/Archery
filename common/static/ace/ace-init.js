@@ -130,7 +130,7 @@ function setColumnsCompleteData(result) {
     } else {
         $.ajax({
             type: "get",
-            url: "/instance/instance_resource/",
+            url: "/archery/instance/instance_resource/",
             dataType: "json",
             data: {
                 instance_name: $("#instance_name").val(),

@@ -279,7 +279,7 @@
             // 修改状态
             $.ajax({
                 type: "post",
-                url: "/archive/switch/",
+                url: "/archery/archive/switch/",
                 dataType: "json",
                 data: {
                     "archive_id": "{{ archive_config.id }}",
@@ -313,7 +313,7 @@
             if (isContinue) {
                 $.ajax({
                     type: "get",
-                    url: "/archive/once/",
+                    url: "/archery/archive/once/",
                     dataType: "json",
                     data: {
                         archive_id: "{{ archive_config.id }}"
@@ -342,7 +342,7 @@
                 escape: true,
                 method: 'get',
                 contentType: "application/x-www-form-urlencoded",
-                url: "/archive/log/",
+                url: "/archery/archive/log/",
                 striped: true,                      //是否显示行间隔色
                 cache: true,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
                 pagination: true,                   //是否显示分页（*）

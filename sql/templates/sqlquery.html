@@ -272,7 +272,7 @@
                 escape: true,
                 method: 'get',
                 contentType: "application/x-www-form-urlencoded",
-                url: "/query/querylog/",
+                url: "/archery/query/querylog/",
                 striped: true,                      //是否显示行间隔色
                 cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
                 pagination: true,                   //是否显示分页（*）
@@ -422,7 +422,7 @@
             } else if ($("#alias").val()) {
                 $.ajax({
                     type: "post",
-                    url: "/query/favorite/",
+                    url: "/archery/query/favorite/",
                     dataType: "json",
                     data: {
                         query_log_id: $("#query_log_id").val(),
@@ -452,7 +452,7 @@
         function unstar(query_log_id) {
             $.ajax({
                 type: "post",
-                url: "/query/favorite/",
+                url: "/archery/query/favorite/",
                 dataType: "json",
                 data: {
                     query_log_id: query_log_id,
@@ -837,7 +837,7 @@
                                         var extraInfo = tabs[i].children[1].innerHTML+"|"+e.length;
                                         $.ajax({
                                             type: "post",
-                                            url: "/audit/input/",
+                                            url: "/archery/audit/input/",
                                             dataType: "json",
                                             data: {
                                                 action:"下载",
@@ -939,7 +939,7 @@
             //提交请求
             $.ajax({
                 type: "post",
-                url: "/query/",
+                url: "/archery/query/",
                 dataType: "json",
                 data: {
                     instance_name: $("#instance_name").val(),
@@ -1062,7 +1062,7 @@
             //获取db_name
             $.ajax({
                 type: "get",
-                url: "/instance/instance_resource/",
+                url: "/archery/instance/instance_resource/",
                 dataType: "json",
                 async: async,
                 data: {
@@ -1122,7 +1122,7 @@
             }
             $.ajax({
                 type: "get",
-                url: "/instance/instance_resource/",
+                url: "/archery/instance/instance_resource/",
                 dataType: "json",
                 data: {
                     instance_name: $("#instance_name").val(),
@@ -1176,7 +1176,7 @@
             //获取table
             $.ajax({
                 type: "get",
-                url: "/instance/instance_resource/",
+                url: "/archery/instance/instance_resource/",
                 dataType: "json",
                 data: {
                     instance_name: $("#instance_name").val(),
@@ -1212,7 +1212,7 @@
         $("#table_name").change(function () {
             $.ajax({
                 type: "post",
-                url: "/instance/describetable/",
+                url: "/archery/instance/describetable/",
                 dataType: "json",
                 data: {
                     instance_name: $("#instance_name").val(),
@@ -1267,7 +1267,7 @@
             $(function () {
                 $.ajax({
                     type: "get",
-                    url: "/group/user_all_instances/",
+                    url: "/archery/group/user_all_instances/",
                     dataType: "json",
                     data: {
                         tag_codes: ['can_read']

@@ -177,7 +177,7 @@
         $(function () {
             $.ajax({
                 type: "get",
-                url: "/group/user_all_instances/",
+                url: "/archery/group/user_all_instances/",
                 dataType: "json",
                 data: {
                     db_type: ['mysql']
@@ -209,7 +209,7 @@
             //获取db_name
             $.ajax({
                 type: "get",
-                url: "/instance/instance_resource/",
+                url: "/archery/instance/instance_resource/",
                 dataType: "json",
                 data: {
                     instance_name: $("#instance_name").val(),
@@ -235,7 +235,7 @@
             //获取binlog
             $.ajax({
                 type: "post",
-                url: "/binlog/list/",
+                url: "/archery/binlog/list/",
                 dataType: "json",
                 data: {
                     instance_name: $("#instance_name").val()
@@ -268,7 +268,7 @@
             //将数据通过ajax提交给获取db_name
             $.ajax({
                 type: "get",
-                url: "/instance/instance_resource/",
+                url: "/archery/instance/instance_resource/",
                 dataType: "json",
                 data: {
                     instance_name: $("#instance_name").val(),
@@ -302,7 +302,7 @@
                 $(this).prop('disabled', true);
                 $.ajax({
                     type: "post",
-                    url: "/binlog/my2sql/",
+                    url: "/archery/binlog/my2sql/",
                     dataType: "json",
                     data: {
                         instance_name: $("#instance_name").val(),
